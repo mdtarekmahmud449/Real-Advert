@@ -133,6 +133,7 @@ body {
   border-radius: 7px;
   font-family: var(--primaryFont);
   background-color: var(--btnColor) !important;
+  color: #fff;
 }
 
 .btnCustom:hover {
@@ -234,6 +235,105 @@ body {
 }
 /* Product Section End */
 
+/* Commitment Section Start */
+.commitSection .btnCustom {
+  margin-top: 10px;
+  width: 100%;
+}
+.commitSection .wrapperImg {
+  height: auto;
+}
+.singleCommit img {
+  width: 80px;
+  height: 80px;
+}
+.singleCommit {
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  padding: 30px 10px;
+  border-radius: 7px;
+  width: 99%;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+.singleCommit .paragraphText {
+  margin-bottom: 10px;
+}
+.normalText {
+  font-size: 1em;
+  font-family: var(--primaryFont);
+  color: #565656;
+}
+.commitBoxWrapper {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  margin-top: 40px;
+  justify-content: space-between;
+}
+.singleCommitBox {
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  border-radius: 7px;
+  padding: 20px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  width: 48%;
+  position: relative;
+}
+.singleCommitBox img {
+  position: absolute;
+  top: -40px;
+  height: 80px;
+  width: 80px;
+  left: 0;
+  right: 0;
+  margin-inline: auto;
+}
+.singleCommitBox .paragraphTitle {
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+/* Commitment Section End */
+
+/* Footer Section Start */
+.footerSection {
+  width: 100%;
+  margin: 0 auto;
+  background-color: var(--primaryColor);
+}
+.footerSection .paragraphTitle {
+  color: #fff;
+}
+.footerSection .paragraphText {
+  color: #ffffffd7;
+  margin-bottom: 40px;
+}
+.footerSection .footerTitle {
+  font-family: var(--primaryFont);
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+.footerSection ul {
+  list-style: none;
+  margin-left: -8px;
+  margin-bottom: 20px;
+}
+.footerSection ul li {
+  float: none;
+  color: #ffffffd7;
+  font-size: 1em;
+  font-family: var(--primaryFont);
+}
+.footerSection ul li a {
+  text-decoration: none;
+  color: #ffffffd7;
+}
+.footerSection hr {
+  border-top: 6px solid #fffcfc;
+  margin-bottom: 40px;
+}
+/* Footer Section End */
 @media screen and (max-width: 767px) {
   /* Utilites Start */
   .section {
@@ -279,4 +379,18 @@ body {
     margin-top: 20px;
   }
   /* Product Section End */
+
+  /* Commitmenti Section Start */
+  .singleCommit img {
+    margin-bottom: 20px;
+  }
+  .singleCommitBox {
+    width: 100%;
+  }
+  .singleCommit .paragraphTitle {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+  }
+  /* Commitmenti Section Start */
 }
