@@ -13,7 +13,7 @@
   --mainFontColor: #ffffff;
   --secondaryFontColor: #e1dcdc;
   --titleColor: #000;
-  --subtitleColor: #0c0c0c;
+  --subtitleColor: #000000d0;
   --paragraphTextColor: #000;
 }
 ::selection {
@@ -86,6 +86,17 @@ body {
   color: var(--titleColor);
   font-family: var(--primaryFont);
   font-weight: 700;
+  margin-bottom: 60px;
+  position: relative;
+}
+
+.titleText::after {
+  content: url(../img/line.png);
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-inline: auto;
+  top: 30px;
 }
 
 .subtitleText {
@@ -113,7 +124,7 @@ body {
 }
 .section {
   width: 100%;
-  padding: 60px 0;
+  padding: 40px 0;
   margin: 0 auto;
 }
 .btnCustom {
@@ -156,9 +167,6 @@ body {
   margin-top: 40px;
   width: 200px;
 }
-.firstSection .titleText {
-  margin-bottom: 60px;
-}
 .wrapper {
   height: 60vh;
 }
@@ -169,36 +177,106 @@ body {
   width: 100%;
   height: 100%;
 }
-
-/* .wrapperBox {
-  padding-top: 120px;
-} */
 /* First Section End */
+
+/* Product Section Start */
+.productSection .subtitleText {
+  margin-bottom: 20px;
+}
+.productBox {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 32px;
+  border-radius: 7px;
+  margin-bottom: 20px;
+}
+.singleBox img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-position: center center;
+}
+.productSection .paragraphTitle {
+  margin-bottom: 10px;
+}
+.productSection .wrapperImg {
+  background-size: contain;
+  height: auto;
+  margin-top: 40px;
+}
+.btnProduct {
+  position: relative;
+  padding: 0 20px;
+  margin-top: 40px;
+  border-radius: 0;
+  width: 70%;
+}
+.btnProduct::after {
+  content: "";
+  position: absolute;
+  border-top: 50px solid var(--btnColor);
+  border-left: 50px solid var(--btnColor);
+  border-right: 50px solid transparent;
+  border-bottom: 0px solid transparent;
+  top: 0;
+  z-index: -1;
+  right: -50px;
+}
+.btnProduct::before {
+  content: "";
+  position: absolute;
+  border-top: 0px solid transparent;
+  border-right: 50px solid var(--btnColor);
+  border-left: 50px solid transparent;
+  border-bottom: 50px solid var(--btnColor);
+  top: 0;
+  left: -50px;
+  z-index: -1;
+}
+/* Product Section End */
 
 @media screen and (max-width: 767px) {
   /* Utilites Start */
   .section {
-    padding: 20px 0px;
+    padding: 60px 0px;
   }
   .titleText {
-    font-size: 2.2rem;
+    font-size: 2.1rem;
+    margin-bottom: 60px;
   }
   .subtitleText {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
   .paragraphTitle {
-    font-size: 1.2rem;
+    font-size: 1rem;
+  }
+  .paragraphText {
+    font-size: 0.9em;
   }
   /* Utilites End */
 
   /* First Section Start */
   .firstSection {
-    margin-top: 56px;
+    margin-top: 40px;
   }
   .firstSection .btnCustom {
     width: 100%;
     margin-top: 20px;
     margin-bottom: 40px;
   }
+  .solutionMessageBox {
+    margin: 20px 0;
+  }
   /* First Section End */
+
+  /* Product Section Start */
+  .productSection .wrapperImg {
+    background-size: contain;
+    height: auto;
+    margin-top: 20px;
+  }
+
+  .productSection .paragraphTitle {
+    margin-top: 20px;
+  }
+  /* Product Section End */
 }
