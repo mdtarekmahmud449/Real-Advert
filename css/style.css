@@ -7,8 +7,8 @@
 
 :root {
   --bodyColor: #fff;
-  --primaryColor: #18ac78;
-  --btnColor: #1fc088;
+  --primaryColor: #00bc95;
+  --btnColor: #00bc95;
   --primaryFont: "Poppins", sans-serif;
   --mainFontColor: #ffffff;
   --secondaryFontColor: #e1dcdc;
@@ -294,47 +294,6 @@ body {
 }
 /* Commitment Section End */
 
-/* Footer Section Start */
-.footerSection {
-  width: 100%;
-  margin: 0 auto;
-  background-color: var(--primaryColor);
-}
-.footerSection .paragraphTitle {
-  color: #fff;
-}
-.footerSection .paragraphText {
-  color: #ffffffd7;
-  margin-bottom: 40px;
-}
-.footerSection .footerTitle {
-  font-family: var(--primaryFont);
-  color: #fff;
-  font-weight: 600;
-  font-size: 1.2em;
-  margin-bottom: 10px;
-}
-.footerSection ul {
-  list-style: none;
-  margin-left: -8px;
-  margin-bottom: 20px;
-}
-.footerSection ul li {
-  float: none;
-  color: #ffffffd7;
-  font-size: 1em;
-  font-family: var(--primaryFont);
-}
-.footerSection ul li a {
-  text-decoration: none;
-  color: #ffffffd7;
-}
-.footerSection hr {
-  border-top: 6px solid #fffcfc;
-  margin-bottom: 40px;
-}
-/* Footer Section End */
-
 /* Pricing Section Start */
 .pricingSection .titleText::after {
   left: 10px;
@@ -373,6 +332,16 @@ body {
 }
 /* Pricing Section End */
 
+/* Case Exemple Section Start */
+.caseExempleSection .exempleRow {
+  display: flex;
+  align-items: center;
+}
+.box {
+  margin-bottom: 40px;
+}
+/* Case Exemple Section  End*/
+
 /* Enquiries Section Start */
 .companyBox {
   box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
@@ -396,9 +365,10 @@ body {
   width: 49%;
   box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px,
     rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
-  padding: 20px 10px;
+  padding: 20px;
   border-radius: 7px;
   margin: 12px 0;
+  background-color: var(--primaryColor);
 }
 .companyTitle,
 .founderTitle {
@@ -415,7 +385,7 @@ body {
 .name {
   font-size: 1.3em;
   font-weight: 600;
-  color: #000000e5;
+  color: #000;
   font-family: var(--primaryFont);
   text-align: center;
 }
@@ -424,15 +394,15 @@ body {
   text-align: center;
   font-family: var(--primaryFont);
   font-size: 1em;
-  color: #000000b9;
+  color: #000000d6;
   margin-bottom: 5px;
 }
 .description {
   font-weight: normal;
   text-align: center;
   font-family: var(--primaryFont);
-  font-size: 1;
-  color: #000000b9;
+  font-size: 0.9em;
+  color: #120505bd;
 }
 /* Enquiries Section End */
 
@@ -482,6 +452,47 @@ body {
   height: 100%;
 }
 /* Contact Section End */
+
+/* Footer Section Start */
+.footerSection {
+  width: 100%;
+  margin: 0 auto;
+  background-color: var(--primaryColor);
+}
+.footerSection .paragraphTitle {
+  color: #fff;
+}
+.footerSection .paragraphText {
+  color: #ffffffd7;
+  margin-bottom: 40px;
+}
+.footerSection .footerTitle {
+  font-family: var(--primaryFont);
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+.footerSection ul {
+  list-style: none;
+  margin-left: -8px;
+  margin-bottom: 20px;
+}
+.footerSection ul li {
+  float: none;
+  color: #ffffffd7;
+  font-size: 1em;
+  font-family: var(--primaryFont);
+}
+.footerSection ul li a {
+  text-decoration: none;
+  color: #ffffffd7;
+}
+.footerSection hr {
+  border-top: 6px solid #fffcfc;
+  margin-bottom: 40px;
+}
+/* Footer Section End */
 
 @media screen and (max-width: 767px) {
   /* Utilites Start */
@@ -572,6 +583,9 @@ body {
     height: 300px;
   }
   /* Pricing Section End */
+
+  /* Case Exemple Section Start */
+  /* Case Exemple Section End */
 
   /* Enquiries Section Start */
   .singleFounder {
