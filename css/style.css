@@ -334,6 +334,46 @@ body {
   margin-bottom: 40px;
 }
 /* Footer Section End */
+
+/* Pricing Section Start */
+.pricingSection .titleText::after {
+  left: 10px;
+  top: 105px;
+}
+.pricingSection .titleText {
+  font-size: 3.1rem;
+}
+.imgBoxShadow {
+  box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em,
+    rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+  height: 400px;
+  width: 400px;
+  padding: 10px;
+  border-radius: 50%;
+  margin: 0px auto;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+.pricingWrapperImg {
+  height: 100%;
+  width: 100%;
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+}
+.singleRevenue {
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+  padding: 20px 0;
+  margin: 20px 0;
+}
+.pricingSection .pText {
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+/* Pricing Section End */
+
 @media screen and (max-width: 767px) {
   /* Utilites Start */
   .section {
@@ -387,10 +427,36 @@ body {
   .singleCommitBox {
     width: 100%;
   }
+  .singleCommit {
+    width: 100%;
+  }
   .singleCommit .paragraphTitle {
     text-align: center;
     margin-bottom: 20px;
     font-size: 1.5em;
   }
   /* Commitmenti Section Start */
+
+  /* Pricing Section Start */
+  .pricingSection .titleText {
+    font-size: 3rem;
+  }
+  .pricingRightHeading {
+    margin-top: 20px;
+  }
+  .pTitleImg {
+    height: 60px;
+    width: 60px;
+  }
+  .imgBoxShadow {
+    width: 300px;
+    height: 300px;
+  }
+  /* Pricing Section End */
+}
+
+@media screen and (max-width: 500px) {
+  .pricingSection .titleText {
+    font-size: 2.4rem;
+  }
 }
