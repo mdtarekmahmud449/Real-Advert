@@ -233,6 +233,77 @@ body {
   left: -50px;
   z-index: -1;
 }
+
+.productTille {
+  margin-top: 60px;
+}
+.productWrapper {
+  margin-top: 60px;
+  margin-bottom: 40px;
+}
+.singleProductBox {
+  width: 23%;
+  margin: 0 auto;
+  padding: 20px;
+  min-height: 200px;
+  border: 4px solid var(--primaryColor);
+  border-radius: 16px;
+  position: relative;
+}
+.singleBoxTop {
+  width: 80%;
+  background-color: var(--primaryColor);
+  height: 80px;
+  position: absolute;
+  padding: 10px;
+  border-radius: 50%;
+  top: -40px;
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  left: 0;
+  color: #fff;
+  font-family: var(--primaryFont);
+  font-weight: 600;
+  right: 0;
+  margin-inline: auto;
+}
+
+.singleBoxBottom {
+  position: absolute;
+  width: 80px;
+  background-color: #fff;
+  padding: 10px;
+  height: 80px;
+  bottom: -40px;
+  left: 0;
+  border: 4px solid var(--primaryColor);
+  border-radius: 50%;
+  right: 0;
+  margin-inline: auto;
+}
+.singleBoxBottom img {
+  height: auto;
+  width: 100%;
+}
+.productDetails .paragraphText {
+  margin-bottom: 10px;
+}
+.productDetails {
+  margin-top: 50px;
+  margin-bottom: 40px;
+}
+.fourth,
+.second,
+.fourthBottom,
+.secondBottom {
+  border-color: #000;
+}
+.secondTop,
+.fourthTop {
+  background-color: #000;
+}
 /* Product Section End */
 
 /* Commitment Section Start */
@@ -295,7 +366,7 @@ body {
 /* Commitment Section End */
 
 /* Pricing Section Start */
-.pricingSection .titleText::after {
+.priceTitleWrap .titleText::after {
   left: 10px;
   top: 105px;
 }
@@ -328,7 +399,7 @@ body {
 }
 .pricingSection .pText {
   margin-top: 40px;
-  margin-bottom: 20px;
+  margin-bottom: 60px;
 }
 /* Pricing Section End */
 
@@ -538,8 +609,22 @@ body {
     margin-top: 20px;
   }
 
+  .productTille {
+    margin-top: 40px;
+  }
   .productSection .paragraphTitle {
     margin-top: 20px;
+  }
+  .productSection .productTille::after {
+    top: 85px;
+  }
+  .singleProductBox {
+    width: 90%;
+    margin-bottom: 90px;
+  }
+  .productWrapper {
+    margin-top: 20px;
+    margin-bottom: 0;
   }
   /* Product Section End */
 
@@ -561,6 +646,7 @@ body {
     margin-bottom: 20px;
     font-size: 1.5em;
   }
+
   /* Commitmenti Section Start */
 
   /* Pricing Section Start */
